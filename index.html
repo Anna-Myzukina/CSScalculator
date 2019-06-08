@@ -10,7 +10,39 @@
 <body>
     <div class="main">
         <h1>CSS weigth calculator</h1>
-        <p class="intro">Calculator <a href="http://www.w3.org/TR/css3-selector/#specificity" target="_blanc"></a> </p>
+        <p class="intro">Calculator <a href="http://www.w3.org/TR/css3-selector/#specificity" target="_blanc">from Keegan Street</a>
+        Change CSS selector in fields</p>
+<!-- Main box of calculator -->
+        <div id="items" class="items">
+            <div class="item is-small transition-all">
+                 <!-- Sector with name of selectors -->
+                <textarea type="text" class="input">
+                    ul#nav li.action a
+                </textarea>
+                <div class="selector">
+                    <span class="type-c">ul</span>
+                    <span class="type-a">#nav</span>
+                    <span class="type-c">li</span>
+                    <span class="type-b">.active</span>
+                    <span class="type-c">a</span>
+                </div>
+                 <!-- Sector with name count of selectors -->
+                <div class="specifity">
+                    <span class="type-z">0</span>
+                    <span class="type-a">1</span>
+                    <span class="type-b">1</span>
+                    <span class="type-c">3</span>
+                </div>
+
+                <div class="legend">
+                    <span class="type-z">Styles in atribute</span>
+                    <span class="type-a">ID</span>
+                    <span class="type-b">Class, Pseudo-class</span>
+                    <span class="type-c">Elements, Pseudo-elements</span>
+                </div>
+                <a href="#" class="duplicate button">Cloning</a>
+            </div>
+        </div>
     </div>
 
 
@@ -18,8 +50,7 @@
 
 
 
-    <div class="div div1">div1</div>
-    <div class="div div2">div2</div>
+    
     <script src="script.js"></script>
 </body>
 </html>
