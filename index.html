@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main">
-        <h1>CSS weigth calculator</h1>
-        <p class="intro">Calculator <a href="http://www.w3.org/TR/css3-selector/#specificity" target="_blanc"></a> </p>
-    </div>
+		<h1>Specificity Calculator</h1>
+		<p class="intro">Калькулятор <a href="http://www.w3.org/TR/css3-selectors/#specificity" target="_blank">специфичности CSS</a> от <a href="http://specificity.keegan.st/">Keegan Street</a>. Измените или вставьте селекторы в поля ниже.</p>
+		<div id="items" class="items">
+			<div class="item is-small transition-all">
+				<textarea type="text" class="input">ul#nav li.active a</textarea>
+				<div class="selector"><span class="type-c">ul</span><span class="type-a">#nav</span> <span class="type-c">li</span><span class="type-b">.active</span> <span class="type-c">a</span></div>
+				<div class="specificity">
+					<span class="type-z">0</span>
+					<span class="type-a">1</span>
+					<span class="type-b">1</span>
+					<span class="type-c">3</span>
+				</div>
+				<div class="legend">
+          <span class="type-z">Стили в атрибуте <code>style</code></span>
+					<span class="type-a">ID</span>
+					<span class="type-b">Классы, псевдоклассы</span>
+					<span class="type-c">Элементы, псевдоэлементы</span>
+				</div>
+				<a href="#" class="duplicate button">Клонировать</a>
+			</div>
+		</div>
+	</main>
+	<div class="menu">
+		<a href="#" class="sort button">Сортировать по специфичности</a>
+	</div>
+	
+	<div class="offscreen-container"><div id="offscreen"></div></div>
 
 
 
-
-
-
-    <div class="div div1">div1</div>
-    <div class="div div2">div2</div>
-    <script src="script.js"></script>
 </body>
 </html>
